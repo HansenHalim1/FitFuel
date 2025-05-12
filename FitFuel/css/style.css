@@ -1,0 +1,163 @@
+/* General Reset and Body Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('blm di isi');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background static on scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container {
+    width: 60%;
+    max-width: 450px; /* Max width for content area */
+    text-align: center;
+    margin:auto
+}
+
+/* Opening Page Specific Styles */
+.opening-page-container {
+    background-color: rgba(22, 78, 78, 0.85); /* Dark teal overlay - adjust opacity as needed */
+    padding: 50px 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.opening-page-container h1.logo {
+    font-size: 3.5em; /* Large "FitFuel" */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.opening-page-container h2.tagline {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.opening-page-container h2.tagline .highlight {
+    color: #FF6F3C; /* Orange color for "Elevate Your Life" */
+}
+
+.opening-page-container p.description {
+    font-size: 0.95em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Authentication Card Styles (Login & Sign Up) */
+.auth-card {
+    background-color: white;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.auth-card h2 {
+    color: #164E4E; /* Dark Teal for headings like "Welcome Back!" and "Sign up" */
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #555; /* Dark gray for labels */
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f9f9f9; /* Light gray background for inputs */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #FF6F3C;
+    box-shadow: 0 0 0 2px rgba(255, 111, 60, 0.2);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #FF6F3C; /* Orange */
+    border: none;
+    border-radius: 25px; /* Pill shape */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btnt {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #E05A2B; /* Darker orange on hover */
+}
+
+/* Switch Form Link (e.g., "Don't have an account? Sign up") */
+.switch-form-link {
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.switch-form-link a {
+    color: #FF6F3C; /* Orange link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-form-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .opening-page-container h1.logo {
+        font-size: 2.8em;
+    }
+    .opening-page-container h2.tagline {
+        font-size: 1.5em;
+    }
+    .auth-card h2 {
+        font-size: 1.6em;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+}
